@@ -46,7 +46,13 @@ function initPage(snapshotObject) {
         snapshotObject.forEach(function(childSnapshot) {
 
             // make an array for the value of each property in the object
-            var userArray = [childSnapshot.child("name").val(), childSnapshot.child("company").val(), childSnapshot.child("dressCode").val(), childSnapshot.child("industry").val(), childSnapshot.child("outfitResult").val()];
+            var userArray = [
+				childSnapshot.child("name").val(), 
+				childSnapshot.child("company").val(), 
+				childSnapshot.child("dressCode").val(), 
+				childSnapshot.child("industry").val(), 
+				childSnapshot.child("outfitResult").val()
+			];
             //childSnapshot.child("outfitResult").val()
 
             // display to page (append to table)
